@@ -21,10 +21,14 @@
 		B03F05DF2B090C7900901345 /* ChatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05DD2B090C7900901345 /* ChatListTableViewCell.swift */; };
 		B03F05E02B090C7900901345 /* ChatListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B03F05DE2B090C7900901345 /* ChatListTableViewCell.xib */; };
 		B03F05E22B090D5E00901345 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05E12B090D5E00901345 /* UIColor+Ext.swift */; };
+		B03F05E62B0919E500901345 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05E52B0919E500901345 /* AppDelegateTests.swift */; };
+		B03F05E82B091A0900901345 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05E72B091A0900901345 /* AppRouterTests.swift */; };
+		B03F05EA2B091A2100901345 /* AppContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05E92B091A2100901345 /* AppContainerTests.swift */; };
+		B03F05ED2B091AB400901345 /* ChatListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05EC2B091AB400901345 /* ChatListTests.swift */; };
+		B03F05EF2B091B7100901345 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05EE2B091B7100901345 /* URLProtocolMock.swift */; };
 		B0BF426E2B07933D0013784A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF426D2B07933D0013784A /* AppDelegate.swift */; };
 		B0BF42772B07933E0013784A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BF42762B07933E0013784A /* Assets.xcassets */; };
 		B0BF427A2B07933E0013784A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BF42782B07933E0013784A /* LaunchScreen.storyboard */; };
-		B0BF42852B07933E0013784A /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF42842B07933E0013784A /* ChatAppTests.swift */; };
 		B0BF428F2B07933E0013784A /* ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF428E2B07933E0013784A /* ChatAppUITests.swift */; };
 		B0BF42912B07933E0013784A /* ChatAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF42902B07933E0013784A /* ChatAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -74,13 +78,17 @@
 		B03F05DD2B090C7900901345 /* ChatListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewCell.swift; sourceTree = "<group>"; };
 		B03F05DE2B090C7900901345 /* ChatListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatListTableViewCell.xib; sourceTree = "<group>"; };
 		B03F05E12B090D5E00901345 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		B03F05E52B0919E500901345 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		B03F05E72B091A0900901345 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
+		B03F05E92B091A2100901345 /* AppContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerTests.swift; sourceTree = "<group>"; };
+		B03F05EC2B091AB400901345 /* ChatListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTests.swift; sourceTree = "<group>"; };
+		B03F05EE2B091B7100901345 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		B0BF426A2B07933D0013784A /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BF426D2B07933D0013784A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BF42762B07933E0013784A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0BF42792B07933E0013784A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0BF427B2B07933E0013784A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0BF42802B07933E0013784A /* ChatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0BF42842B07933E0013784A /* ChatAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppTests.swift; sourceTree = "<group>"; };
 		B0BF428A2B07933E0013784A /* ChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BF428E2B07933E0013784A /* ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITests.swift; sourceTree = "<group>"; };
 		B0BF42902B07933E0013784A /* ChatAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -204,6 +212,33 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		B03F05E32B0919D100901345 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B03F05E52B0919E500901345 /* AppDelegateTests.swift */,
+				B03F05E92B091A2100901345 /* AppContainerTests.swift */,
+				B03F05E72B091A0900901345 /* AppRouterTests.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B03F05EB2B091A9400901345 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B03F05EE2B091B7100901345 /* URLProtocolMock.swift */,
+				B03F05F02B091B7F00901345 /* ChatList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B03F05F02B091B7F00901345 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				B03F05EC2B091AB400901345 /* ChatListTests.swift */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
 		B0BF42612B07933D0013784A = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +274,8 @@
 		B0BF42832B07933E0013784A /* ChatAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0BF42842B07933E0013784A /* ChatAppTests.swift */,
+				B03F05E32B0919D100901345 /* App */,
+				B03F05EB2B091A9400901345 /* Scenes */,
 			);
 			path = ChatAppTests;
 			sourceTree = "<group>";
@@ -325,6 +361,7 @@
 					};
 					B0BF427F2B07933E0013784A = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = B0BF42692B07933D0013784A;
 					};
 					B0BF42892B07933E0013784A = {
@@ -404,7 +441,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0BF42852B07933E0013784A /* ChatAppTests.swift in Sources */,
+				B03F05EA2B091A2100901345 /* AppContainerTests.swift in Sources */,
+				B03F05ED2B091AB400901345 /* ChatListTests.swift in Sources */,
+				B03F05EF2B091B7100901345 /* URLProtocolMock.swift in Sources */,
+				B03F05E82B091A0900901345 /* AppRouterTests.swift in Sources */,
+				B03F05E62B0919E500901345 /* AppDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +663,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5LPGJZK4B;
@@ -631,6 +673,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eren.ChatAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatAppTests/App/ChatAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatApp";
@@ -642,6 +686,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5LPGJZK4B;
@@ -651,6 +696,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eren.ChatAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatAppTests/App/ChatAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChatApp";

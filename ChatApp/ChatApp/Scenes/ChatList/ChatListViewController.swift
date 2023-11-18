@@ -9,7 +9,7 @@ import UIKit
 
 final class ChatListViewController: UIViewController {
 
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
 
     private var chats: [ChatListPresentation] = []
 
