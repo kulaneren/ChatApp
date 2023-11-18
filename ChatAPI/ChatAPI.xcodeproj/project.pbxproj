@@ -10,6 +10,7 @@
 		B03F05B72B08EF5300901345 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05B62B08EF5300901345 /* Chat.swift */; };
 		B03F05B92B08EF5B00901345 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05B82B08EF5B00901345 /* Message.swift */; };
 		B03F05BB2B08EFE400901345 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05BA2B08EFE400901345 /* ChatService.swift */; };
+		B03F05C02B08FA8E00901345 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B03F05BF2B08FA8E00901345 /* data.json */; };
 		B0BF42B02B0793DF0013784A /* ChatAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0BF42A72B0793DF0013784A /* ChatAPI.framework */; };
 		B0BF42B52B0793DF0013784A /* ChatAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF42B42B0793DF0013784A /* ChatAPITests.swift */; };
 		B0BF42B62B0793DF0013784A /* ChatAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = B0BF42AA2B0793DF0013784A /* ChatAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 		B03F05B62B08EF5300901345 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		B03F05B82B08EF5B00901345 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B03F05BA2B08EFE400901345 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		B03F05BF2B08FA8E00901345 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		B0BF42A72B0793DF0013784A /* ChatAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChatAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BF42AA2B0793DF0013784A /* ChatAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatAPI.h; sourceTree = "<group>"; };
 		B0BF42AF2B0793DF0013784A /* ChatAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,14 @@
 			path = DTOs;
 			sourceTree = "<group>";
 		};
+		B03F05BE2B08FA7200901345 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B03F05BF2B08FA8E00901345 /* data.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B0BF429D2B0793DF0013784A = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		B0BF42A92B0793DF0013784A /* ChatAPI */ = {
 			isa = PBXGroup;
 			children = (
+				B03F05BE2B08FA7200901345 /* Resources */,
 				B03F05B52B08EF3E00901345 /* DTOs */,
 				B03F05BA2B08EFE400901345 /* ChatService.swift */,
 				B0BF42AA2B0793DF0013784A /* ChatAPI.h */,
@@ -192,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F05C02B08FA8E00901345 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@ public protocol ChatServiceProtocol {
 public final class ChatService: ChatServiceProtocol {
 
     enum APIError: Error {
+        case invalidData
         case noDataReturned
         case invalidUrl
     }
@@ -56,13 +57,23 @@ public final class ChatService: ChatServiceProtocol {
     }
 
     public func getChats(completion: @escaping (Result<[Chat], Error>) -> Void) {
-        var urlString = Constants.baseUrl + Constants.defaultUrlParams
+        let bundle = Bundle(for: ChatService.self)
 
-        guard let url = URL(string: urlString) else {
-            completion(.failure(APIError.invalidUrl))
+        guard let url = bundle.url(forResource: "data", withExtension: "json") else {
+            completion(.failure(APIError.noDataReturned))
             return
         }
 
-        request(url: url, expecting: [Chat].self, completion: completion)
+        do {
+            let data = try Data(contentsOf: url)
+            let chats = try JSONDecoder().decode([Chat].self, from: data)
+            completion(.success(chats))
+        } catch {
+            completion(.failure(APIError.invalidData))
+            return
+        }
+
+        // No execution because of offline working
+//        request(url: url, expecting: [Chat].self, completion: completion)
     }
 }
