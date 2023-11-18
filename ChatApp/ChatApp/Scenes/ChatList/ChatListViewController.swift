@@ -61,10 +61,9 @@ extension ChatListViewController: ChatListViewModelDelegate {
 
     func navigate(to route: ChatListViewRoute) {
         switch route {
-            // TODO
-//        case .ChatDetail(let viewModel):
-//            let viewController = ChatDetailBuilder.make(with: viewModel)
-//            show(viewController, sender: nil)
+        case .chatDetail(let viewModel):
+            let viewController = ChatDetailBuilder.make(with: viewModel)
+            present(viewController, animated: true)
         }
     }
 }

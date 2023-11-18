@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Utilities
 
 public struct Chat: Codable {
     public let id: String
@@ -13,11 +14,25 @@ public struct Chat: Codable {
     public let lastUpdated: String
     public let messages: [Message]
 
+    public var date: Date {
+        return Date(chatServiceStyle: lastUpdated)
+    }
+
     private enum CodingKeys: String, CodingKey {
         case id = "id"
         case name = "name"
         case lastUpdated = "last_updated"
         case messages = "messages"
+    }
+
+    public init(id: String,
+                name: String,
+                lastUpdated: String,
+                messages: [Message]) {
+        self.id = id
+        self.name = name
+        self.lastUpdated = lastUpdated
+        self.messages = messages
     }
 
     public init(from decoder: Decoder) throws {

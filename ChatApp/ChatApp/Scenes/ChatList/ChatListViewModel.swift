@@ -35,7 +35,9 @@ final class ChatListViewModel: ChatListViewModelProtocol {
             }
             switch result {
             case .success(let response):
-                self.chats = response
+                self.chats = response.sorted(by: {
+                     $0.date > $1.date
+                })
                 let presenatations = self.chats.map({
                     ChatListPresentation(title: $0.name)
                 })
@@ -52,8 +54,8 @@ final class ChatListViewModel: ChatListViewModelProtocol {
 
     func selectChat(at index: Int) {
         let chat = chats[index]
-//        let viewModel = ChatDetailViewModel(ChatItem: item)
-//        delegate?.navigate(to: .ChatDetail(viewModel))
+        let viewModel = ChatDetailViewModel(chat: chat)
+        delegate?.navigate(to: .chatDetail(viewModel))
     }
 
     private func notify(_ output: ChatListViewModelOutput) {

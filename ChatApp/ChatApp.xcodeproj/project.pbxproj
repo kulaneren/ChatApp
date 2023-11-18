@@ -26,6 +26,17 @@
 		B03F05EA2B091A2100901345 /* AppContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05E92B091A2100901345 /* AppContainerTests.swift */; };
 		B03F05ED2B091AB400901345 /* ChatListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05EC2B091AB400901345 /* ChatListTests.swift */; };
 		B03F05EF2B091B7100901345 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05EE2B091B7100901345 /* URLProtocolMock.swift */; };
+		B03F05F22B091CBB00901345 /* ChatDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05F12B091CBB00901345 /* ChatDetailBuilder.swift */; };
+		B03F05F42B091CFB00901345 /* ChatDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05F32B091CFB00901345 /* ChatDetailContracts.swift */; };
+		B03F05F62B091D2A00901345 /* ChatDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05F52B091D2A00901345 /* ChatDetailViewModel.swift */; };
+		B03F05F82B091D4100901345 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05F72B091D4100901345 /* ChatDetailViewController.swift */; };
+		B03F05FA2B091D4800901345 /* ChatDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03F05F92B091D4800901345 /* ChatDetail.storyboard */; };
+		B03F05FC2B091D5C00901345 /* ChatDetailPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05FB2B091D5C00901345 /* ChatDetailPresentation.swift */; };
+		B03F06002B091D9B00901345 /* ChatDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F05FE2B091D9B00901345 /* ChatDetailTableViewCell.swift */; };
+		B03F06012B091D9B00901345 /* ChatDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B03F05FF2B091D9B00901345 /* ChatDetailTableViewCell.xib */; };
+		B03F062C2B092D9A00901345 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03F062B2B092D9A00901345 /* Utilities.framework */; };
+		B03F062D2B092D9A00901345 /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B03F062B2B092D9A00901345 /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B03F06332B09322000901345 /* ChatDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F06322B09322000901345 /* ChatDetailTests.swift */; };
 		B0BF426E2B07933D0013784A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF426D2B07933D0013784A /* AppDelegate.swift */; };
 		B0BF42772B07933E0013784A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0BF42762B07933E0013784A /* Assets.xcassets */; };
 		B0BF427A2B07933E0013784A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0BF42782B07933E0013784A /* LaunchScreen.storyboard */; };
@@ -58,6 +69,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B03F05B32B08EED600901345 /* ChatAPI.framework in Embed Frameworks */,
+				B03F062D2B092D9A00901345 /* Utilities.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +95,16 @@
 		B03F05E92B091A2100901345 /* AppContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerTests.swift; sourceTree = "<group>"; };
 		B03F05EC2B091AB400901345 /* ChatListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTests.swift; sourceTree = "<group>"; };
 		B03F05EE2B091B7100901345 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		B03F05F12B091CBB00901345 /* ChatDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailBuilder.swift; sourceTree = "<group>"; };
+		B03F05F32B091CFB00901345 /* ChatDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailContracts.swift; sourceTree = "<group>"; };
+		B03F05F52B091D2A00901345 /* ChatDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewModel.swift; sourceTree = "<group>"; };
+		B03F05F72B091D4100901345 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		B03F05F92B091D4800901345 /* ChatDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatDetail.storyboard; sourceTree = "<group>"; };
+		B03F05FB2B091D5C00901345 /* ChatDetailPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailPresentation.swift; sourceTree = "<group>"; };
+		B03F05FE2B091D9B00901345 /* ChatDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailTableViewCell.swift; sourceTree = "<group>"; };
+		B03F05FF2B091D9B00901345 /* ChatDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatDetailTableViewCell.xib; sourceTree = "<group>"; };
+		B03F062B2B092D9A00901345 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03F06322B09322000901345 /* ChatDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailTests.swift; sourceTree = "<group>"; };
 		B0BF426A2B07933D0013784A /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BF426D2B07933D0013784A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BF42762B07933E0013784A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B03F05B22B08EED600901345 /* ChatAPI.framework in Frameworks */,
+				B03F062C2B092D9A00901345 /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +146,7 @@
 		B03F05B02B08EED600901345 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B03F062B2B092D9A00901345 /* Utilities.framework */,
 				B03F05B12B08EED600901345 /* ChatAPI.framework */,
 			);
 			name = Frameworks;
@@ -190,6 +214,13 @@
 		B03F05C72B0903B100901345 /* ChatDetail */ = {
 			isa = PBXGroup;
 			children = (
+				B03F05FD2B091D7300901345 /* TableViewCells */,
+				B03F05F12B091CBB00901345 /* ChatDetailBuilder.swift */,
+				B03F05F32B091CFB00901345 /* ChatDetailContracts.swift */,
+				B03F05F52B091D2A00901345 /* ChatDetailViewModel.swift */,
+				B03F05F72B091D4100901345 /* ChatDetailViewController.swift */,
+				B03F05F92B091D4800901345 /* ChatDetail.storyboard */,
+				B03F05FB2B091D5C00901345 /* ChatDetailPresentation.swift */,
 			);
 			path = ChatDetail;
 			sourceTree = "<group>";
@@ -227,6 +258,7 @@
 			children = (
 				B03F05EE2B091B7100901345 /* URLProtocolMock.swift */,
 				B03F05F02B091B7F00901345 /* ChatList */,
+				B03F06312B0931E200901345 /* ChatDetail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -237,6 +269,23 @@
 				B03F05EC2B091AB400901345 /* ChatListTests.swift */,
 			);
 			path = ChatList;
+			sourceTree = "<group>";
+		};
+		B03F05FD2B091D7300901345 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B03F05FE2B091D9B00901345 /* ChatDetailTableViewCell.swift */,
+				B03F05FF2B091D9B00901345 /* ChatDetailTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B03F06312B0931E200901345 /* ChatDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B03F06322B09322000901345 /* ChatDetailTests.swift */,
+			);
+			path = ChatDetail;
 			sourceTree = "<group>";
 		};
 		B0BF42612B07933D0013784A = {
@@ -397,8 +446,10 @@
 			files = (
 				B03F05D12B09074A00901345 /* ChatList.storyboard in Resources */,
 				B03F05E02B090C7900901345 /* ChatListTableViewCell.xib in Resources */,
+				B03F06012B091D9B00901345 /* ChatDetailTableViewCell.xib in Resources */,
 				B0BF427A2B07933E0013784A /* LaunchScreen.storyboard in Resources */,
 				B0BF42772B07933E0013784A /* Assets.xcassets in Resources */,
+				B03F05FA2B091D4800901345 /* ChatDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,14 +474,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F05F42B091CFB00901345 /* ChatDetailContracts.swift in Sources */,
 				B03F05CF2B09074100901345 /* ChatListViewController.swift in Sources */,
 				B03F05D62B0907D200901345 /* AppContainer.swift in Sources */,
+				B03F05F62B091D2A00901345 /* ChatDetailViewModel.swift in Sources */,
 				B03F05C92B09070D00901345 /* ChatListBuilder.swift in Sources */,
 				B0BF426E2B07933D0013784A /* AppDelegate.swift in Sources */,
+				B03F05FC2B091D5C00901345 /* ChatDetailPresentation.swift in Sources */,
 				B03F05E22B090D5E00901345 /* UIColor+Ext.swift in Sources */,
 				B03F05CD2B09072D00901345 /* ChatListViewModel.swift in Sources */,
 				B03F05D82B0907E500901345 /* AppRouter.swift in Sources */,
 				B03F05CB2B09072400901345 /* ChatListContracts.swift in Sources */,
+				B03F06002B091D9B00901345 /* ChatDetailTableViewCell.swift in Sources */,
+				B03F05F22B091CBB00901345 /* ChatDetailBuilder.swift in Sources */,
+				B03F05F82B091D4100901345 /* ChatDetailViewController.swift in Sources */,
 				B03F05DF2B090C7900901345 /* ChatListTableViewCell.swift in Sources */,
 				B03F05D32B09077200901345 /* ChatListPresentation.swift in Sources */,
 				B03F05DB2B090ABD00901345 /* UIViewController+Ext.swift in Sources */,
@@ -443,6 +500,7 @@
 			files = (
 				B03F05EA2B091A2100901345 /* AppContainerTests.swift in Sources */,
 				B03F05ED2B091AB400901345 /* ChatListTests.swift in Sources */,
+				B03F06332B09322000901345 /* ChatDetailTests.swift in Sources */,
 				B03F05EF2B091B7100901345 /* URLProtocolMock.swift in Sources */,
 				B03F05E82B091A0900901345 /* AppRouterTests.swift in Sources */,
 				B03F05E62B0919E500901345 /* AppDelegateTests.swift in Sources */,

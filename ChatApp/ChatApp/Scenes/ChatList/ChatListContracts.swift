@@ -21,7 +21,7 @@ enum ChatListViewModelOutput {
 }
 
 enum ChatListViewRoute {
-//    case ChatDetail(ChatDetailViewModelProtocol)
+    case chatDetail(ChatDetailViewModelProtocol)
 }
 
 protocol ChatListViewModelDelegate: AnyObject {
