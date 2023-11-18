@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03F05B22B08EED600901345 /* ChatAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03F05B12B08EED600901345 /* ChatAPI.framework */; };
+		B03F05B32B08EED600901345 /* ChatAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B03F05B12B08EED600901345 /* ChatAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B0BF426E2B07933D0013784A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF426D2B07933D0013784A /* AppDelegate.swift */; };
 		B0BF42702B07933D0013784A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF426F2B07933D0013784A /* SceneDelegate.swift */; };
 		B0BF42722B07933D0013784A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF42712B07933D0013784A /* ViewController.swift */; };
@@ -35,7 +37,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B03F05B42B08EED600901345 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B03F05B32B08EED600901345 /* ChatAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B03F05B12B08EED600901345 /* ChatAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChatAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BF426A2B07933D0013784A /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BF426D2B07933D0013784A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0BF426F2B07933D0013784A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F05B22B08EED600901345 /* ChatAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B03F05B02B08EED600901345 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B03F05B12B08EED600901345 /* ChatAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B0BF42612B07933D0013784A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +109,7 @@
 				B0BF42832B07933E0013784A /* ChatAppTests */,
 				B0BF428D2B07933E0013784A /* ChatAppUITests */,
 				B0BF426B2B07933D0013784A /* Products */,
+				B03F05B02B08EED600901345 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +164,7 @@
 				B0BF42662B07933D0013784A /* Sources */,
 				B0BF42672B07933D0013784A /* Frameworks */,
 				B0BF42682B07933D0013784A /* Resources */,
+				B03F05B42B08EED600901345 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
