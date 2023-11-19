@@ -44,10 +44,10 @@ MVVM pattern is used with adding builders and presentations.
 
 # Future Improvements
 
-- Persistance module and some composer to handle API requests with fallback
+- Persistance module and a composer to handle API requests with fallback
 - UI testing
 - Better UI/UX
 - More test coverage:
-    I could have made private all the outlets in the controllers. 
+    I could have made all the outlets private in the controllers. 
     And I could have added all the controller life cycle, delegate, and datasource methods to the viewmodel contract.
     It could improve code coverage.
